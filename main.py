@@ -4,8 +4,8 @@ from utils import generate_xiaohongshu
 st.header("🖋️小红书爆款文案生成器")
 
 with st.sidebar:
-    st.text_input("请输入你的DeepSeek API密钥", type="password")
-    deepseek_api_key = st.markdown("[获取DeepSeek API密钥](https://api-docs.deepseek.com/zh-cn/)")
+    deepseek_api_key = st.text_input("请输入你的DeepSeek API密钥", type="password")
+    st.markdown("[获取DeepSeek API密钥](https://api-docs.deepseek.com/zh-cn/)")
 
 theme = st.text_input("🗒️请输入主题")
 submit = st.button("开始创作")
